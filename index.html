@@ -1,0 +1,80 @@
+Creating some cards of lord Krishna images------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna</title>
+    <style>
+    *{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#main{
+    height:100%;
+    width:100%;
+    background-color:antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    position: absolute;
+    /* top:50%;
+    left:50%;
+    transform:translate(-50%,-50%); */
+    height:300px;
+    width: 230px;
+    border-radius:20px;
+    overflow: hidden;
+}
+#card1{
+    background-color: salmon;
+    z-index:10;
+}
+#card2{
+    rotate: -7deg;
+    background-color: blue;
+    z-index:7;
+}
+#card2:hover{
+    z-index:20;
+}
+#card3:hover{
+     z-index:20;
+}
+#card4:hover{
+    z-index:20;
+}
+#card3{
+    rotate: -14deg;
+    background-color: green;
+    z-index:5;
+}
+#card4{
+    rotate: -21deg;
+    background-color:yellow;
+    z-index:3;
+    
+}
+img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+</style>
+</head>
+<body>
+    <div id="main">
+        <div id="card1" class="card"><image src="images\Krishna3.png"></image></div>
+        <div id="card2" class="card"><img src="images\Krishna2.png"></div>
+        <div id="card3" class="card"><img src="images\Krishna.png"></div>
+        <div id="card4" class="card"><img src="images\RadhaKrishna.png"></div>
+    </div>
+</body>
+</html>
